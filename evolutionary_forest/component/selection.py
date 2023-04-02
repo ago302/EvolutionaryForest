@@ -21,7 +21,7 @@ from sklearn.preprocessing import StandardScaler
 from skorch.callbacks import EarlyStopping
 from torch import optim
 from torch.nn import MSELoss
-from umap import UMAP
+import umap.umap_ as UMAP
 from evolutionary_forest.model.VAE import NeuralNetTransformer, VAE
 from evolutionary_forest.multigene_gp import MultipleGeneGP
 from evolutionary_forest.utils import efficient_deepcopy
